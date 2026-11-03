@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O. Mrani-Zentar</title>
+  <meta name="description" content="Personal website of O. Mrani-Zentar: research on decentralized stochastic control, Markov decision processes, and learning. Publications, talks, teaching, and CV.">
+  <style>
+    :root {
+      --bg: #fdfdfc;
+      --text: #1f2328;
+      --muted: #5b6470;
+      --accent: #1f4e9c;
+      --border: #e3e6ea;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14171a;
+        --text: #e6e8ea;
+        --muted: #9aa3ad;
+        --accent: #7fb0ff;
+        --border: #2a2f35;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    nav .inner {
+      max-width: 820px; margin: 0 auto; padding: 0.9rem 1.25rem;
+      display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; align-items: baseline;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 0.95rem;
+    }
+    nav .brand { font-weight: 700; color: var(--text); margin-right: auto; }
+    nav a { color: var(--muted); }
+    nav a:hover { color: var(--accent); text-decoration: none; }
+
+    main { max-width: 820px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+    section { padding-top: 2.5rem; }
+    h1 { font-size: 2.2rem; margin: 0 0 0.3rem; line-height: 1.2; }
+    h2 {
+      font-size: 1.5rem; margin: 0 0 1rem; padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--muted); margin: 1.6rem 0 0.6rem;
+    }
+    .subtitle { color: var(--muted); font-size: 1.1rem; margin: 0 0 1.2rem; }
+    .links { font-family: system-ui, sans-serif; font-size: 0.95rem; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+
+    ul.pubs { list-style: none; padding: 0; margin: 0; }
+    ul.pubs li {
+      padding: 0.8rem 0 0.8rem 1rem;
+      border-left: 3px solid var(--border);
+      margin-bottom: 0.9rem;
+    }
+    .note { color: var(--muted); font-size: 0.92rem; }
+    .tag {
+      display: inline-block; font-family: system-ui, sans-serif; font-size: 0.72rem;
+      padding: 0.05rem 0.5rem; border: 1px solid var(--border); border-radius: 999px;
+      color: var(--muted); margin-left: 0.3rem; vertical-align: 1px;
+    }
+    ul.plain { padding-left: 1.2rem; }
+    ul.plain li { margin-bottom: 0.4rem; }
+    footer {
+      max-width: 820px; margin: 0 auto; padding: 1.5rem 1.25rem 3rem;
+      border-top: 1px solid var(--border); color: var(--muted);
+      font-family: system-ui, sans-serif; font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <span class="brand">O. Mrani-Zentar</span>
+    <a href="#home">Home</a>
+    <a href="#interests">Research</a>
+    <a href="#journals">Journals</a>
+    <a href="#proceedings">Proceedings</a>
+    <a href="#preprints">Preprints</a>
+    <a href="#talks">Talks</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#cv">CV</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home">
+    <h1>O. Mrani-Zentar</h1>
+    <p class="subtitle">PhD researcher in stochastic control and learning</p>
+    <p>
+      I work on the mathematical theory of decision-making under uncertainty, with a focus on
+      decentralized stochastic control, Markov decision processes on general (Borel) spaces, and
+      reinforcement learning. My doctoral research develops centralized reductions, approximation
+      results, and learning guarantees for multi-agent team problems with decentralized information.
+      Before that, I completed a Master's degree at the University of British Columbia, where I
+      studied low-dimensional Lie algebras and their applications to control theory.
+    </p>
+    <!-- Edit the details below: add your affiliation, supervisor, and contact info. -->
+    <div class="links">
+      <a href="mailto:you@example.com">Email</a>
+      <a href="https://github.com/yourusername">GitHub</a>
+      <a href="https://scholar.google.com/">Google Scholar</a>
+      <a href="https://arxiv.org/">arXiv</a>
+    </div>
+  </section>
+
+  <!-- RESEARCH INTERESTS -->
+  <section id="interests">
+    <h2>Research Interests</h2>
+    <ul class="plain">
+      <li>Decentralized stochastic control and multi-agent team problems</li>
+      <li>Markov decision processes on Borel spaces, including weak-Feller regularity and centralized reductions</li>
+      <li>Approximation and near-optimality of finite-window and local-information policies</li>
+      <li>Reinforcement learning, including Q-learning, identifiability, and adaptive control</li>
+      <li>Non-sequential stochastic control, causality, and static reducibility</li>
+      <li>Lie groups, Lie algebras, and geometric methods in control theory</li>
+    </ul>
+  </section>
+
+  <!-- JOURNAL PUBLICATIONS -->
+  <section id="journals">
+    <h2>Journal Publications</h2>
+
+    <h3>Published</h3>
+    <ul class="pubs">
+      <li>
+        Bluman, G. W., <strong>Mrani-Zentar, O.</strong>, &amp; Finlay, D. (2018).
+        Composition of Lie Group Elements from Basis Lie Algebra Elements.
+        <em>Journal of Nonlinear Mathematical Physics</em>, 25(4), 528&ndash;557.
+        <a href="https://doi.org/10.1080/14029251.2018.1503398">doi:10.1080/14029251.2018.1503398</a>      </li>
+    </ul>
+
+    <h3>Under revision</h3>
+    <ul class="pubs">
+      <li>
+        <strong>Mrani-Zentar, O.</strong>, &amp; Y&uuml;ksel, S. (2026).
+        Approximations and learning for decentralized stochastic control and near optimal finite window policies.
+        Under revision at <em>IEEE Transactions on Automatic Control</em>.
+        <a href="https://doi.org/10.48550/arXiv.2605.00160">arXiv:2605.00160</a>      </li>
+      <li>
+        <strong>Mrani-Zentar, O.</strong>, &amp; Y&uuml;ksel, S. (2026).
+        Kernel Metrics and Learning for Borel MDPs: Identifiability and Adaptive Control.
+        Under revision at <em>SIAM Journal on Control and Optimization</em>.
+        <a href="https://arxiv.org/abs/2503.11058">arXiv:2503.11058</a>      </li>
+      <li>
+        <strong>Mrani-Zentar, O.</strong>, Simpson, R., et al. (2025).
+        Non-sequential decentralized stochastic control revisited: Causality and static reducibility.
+        Under revision at <em>IEEE Transactions on Automatic Control</em>.
+        <a href="https://arxiv.org/abs/2211.03949">arXiv:2211.03949</a>      </li>
+    </ul>
+  </section>
+
+  <!-- CONFERENCE PROCEEDINGS -->
+  <section id="proceedings">
+    <h2>Conference Proceedings</h2>
+    <ul class="pubs">
+      <li>
+        <strong>Mrani-Zentar, O.</strong>, &amp; Y&uuml;ksel, S. (2024).
+        Decentralized stochastic control in Borel spaces: Centralized MDP reductions, near optimality of finite window local information, and Q-learning.
+        In <em>Proceedings of the 63rd IEEE Conference on Decision and Control (CDC)</em>, pp. 8435&ndash;8440, Milan, Italy, December 16&ndash;19, 2024. IEEE.
+        <a href="https://ieeexplore.ieee.org/document/10885787">IEEE Xplore</a>      </li>
+    </ul>
+  </section>
+
+  <!-- PREPRINTS -->
+  <section id="preprints">
+    <h2>Preprints</h2>
+    <ul class="pubs">
+      <li>
+        <strong>Mrani-Zentar, O.</strong>, &amp; Y&uuml;ksel, S. (2025).
+        Centralized reduction of decentralized stochastic control models and their weak-Feller regularity.
+        <a href="https://arxiv.org/abs/2408.13828">arXiv:2408.13828</a>      </li>
+    </ul>
+
+    <h3>Thesis</h3>
+    <ul class="pubs">
+      <li>
+        <strong>Mrani-Zentar, O.</strong> (2019).
+        <em>Low-dimensional Lie algebras and control theory</em> (Master's thesis).
+        University of British Columbia.
+        <a href="https://open.library.ubc.ca/collections/ubctheses/24/items/1.0380064">UBC Library</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- SELECTED TALKS -->
+  <section id="talks">
+    <h2>Selected Talks</h2>
+
+    <ul class="pubs">
+      <li>
+        <strong>Mrani-Zentar, O.</strong> (2024, December).
+        Decentralized stochastic control in Borel spaces: Centralized MDP reductions, near optimality of finite window local information, and Q-learning.
+        63rd IEEE Conference on Decision and Control (CDC), Milan, Italy.
+        <span class="note">Oral presentation at an international conference; presents the paper listed under Conference Proceedings.</span>      </li>
+      <li>
+        <strong>Mrani-Zentar, O.</strong> (2024, December).
+        Learning and Approximations for Multi-Agent Team Problems with Borel Spaces under Decentralized Information.
+        Large Population Teams: Control, Equilibria &amp; Learning, 2024 CDC full-day workshop.
+        <span class="note">Oral presentation at an international workshop.</span>
+      </li>
+      <li>
+        <strong>Mrani-Zentar, O.</strong> (2025, May).
+        Existence, Approximations, and Q-learning for Decentralized Stochastic Control with Standard Borel Spaces.
+        10th Meeting on System and Control Theory (MSCT), HEC Montr&eacute;al, Montr&eacute;al, Qu&eacute;bec, Canada, May 7&ndash;9, 2025.
+      </li>
+    </ul>
+  </section>
+
+  <!-- TEACHING -->
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul class="plain">
+      <li><strong>MATH/MTHE 337: Introduction to Stochastic Operations Research</strong>, Queen's University, Winter 2026</li>
+    </ul>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <h2>Curriculum Vitae</h2>
+    <!-- Upload your CV as cv.pdf to the repository root so this link works. -->
+    <p><a href="cv.pdf">Download my CV (PDF)</a></p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; <span id="year"></span> O. Mrani-Zentar
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
